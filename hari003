@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class BooleanExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Meminta untuk memasukkan angka
+        System.out.print("Masukkan sebuah angka: ");
+        int number = scanner.nextInt();
+
+        // Menggunakan boolean untuk mengecek apakah angka genap
+        boolean isEven = (number % 2 == 0);
+
+        // Menampilkan hasilnya
+        if (isEven) {
+            System.out.println(number + " adalah bilangan genap.");
+        } else {
+            System.out.println(number + " adalah bilangan ganjil.");
+        }
+
+        scanner.close();
+    }
+}
